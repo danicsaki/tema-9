@@ -38,7 +38,7 @@ class App extends React.Component {
     const tasksResponse = await fetch('https://app.paymoapp.com/api/tasks', {
       headers: {
         "X-Session": "5059fe5ba060edfd2e29cf241a40d1fd",
-      },
+      }, 
     })
 
     const tasks = (await tasksResponse.json()).tasks
